@@ -14,10 +14,7 @@ from sklearn import decomposition
 from sklearn import datasets
 import seaborn as sns
 
-%pylab inline
-%matplotlib inline
-
-df = pd.read_excel ('/Users/giovannicicceri/Desktop/carlo_project/dataset_env.xlsx')
+df = pd.read_excel ('/dataset_env.xlsx')
 df.describe()
 df.corr()
 #df.head(5)
