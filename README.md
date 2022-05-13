@@ -3,7 +3,7 @@ Use of Machine Learning (ML) algorithms to infer humans presence (headcount) fro
 
 
 
-# Full Paper on IEEE Xplore
+# Full Paper available on IEEE Xplore
 
 # Abstract
 
