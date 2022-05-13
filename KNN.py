@@ -14,10 +14,8 @@ from sklearn import decomposition
 from sklearn import datasets
 import seaborn as sns
 
-#%pylab inline
-#%matplotlib inline
 
-df = pd.read_excel ('/Users/giovannicicceri/Desktop/carlo_project/dataset_env.xlsx')
+df = pd.read_excel ('/dataset_env.xlsx')
 df.describe()
 df.corr()
 #df.head(5)
@@ -33,7 +31,6 @@ Y =df["label"].tolist()
 
 
 #KNN classifier
-
 from sklearn.neighbors import KNeighborsClassifier
 
 experiments = 100
@@ -48,7 +45,6 @@ for i in range(1,experiments+1):
 	# Loss plot
 	neigh = KNeighborsClassifier(n_neighbors=1, algorithm='auto' )
 	neigh.fit(X_train,y_train)
-	#clf.score(X_test,y_test)
 	print score
 	score.append(neigh.score(X_test,y_test))
 print np.mean(score)
@@ -61,7 +57,6 @@ from sklearn.metrics import classification_report
 
 target_names = ['class 0', 'class 1', 'class 2','class 3','class 4','class 7']
 print(classification_report(y_test, pred, target_names=target_names))
-
 
 
 #mse
