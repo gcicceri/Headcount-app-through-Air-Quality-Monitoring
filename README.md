@@ -5,6 +5,8 @@ G. Cicceri et al., "Smart Healthy Intelligent Room: Headcount through Air Qualit
 doi: 10.1109/SMARTCOMP50058.2020.00071.
 
 
+# Full Paper on IEEE Xplore
+
 # Abstract
 
 In this work, we propose a low-cost Smart and Healthy Intelligent Room System (SHIRS), able to monitor Indoor Air Quality (IAQ) by enhancing edge-based computation. SHIRS exploits the ability to run Machine Learning (ML) algorithms to infer humans presence (headcount) from environmental data analysis. Experimental results show the validity of the proposed approach, demonstrate the potential of edge-based computing and push towards the adoption of smart integrated Cloud-IoT frameworks for environmental monitoring and control.
