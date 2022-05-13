@@ -19,13 +19,9 @@ def neural_network(input_size,output_size,learning_rate):
 	model.add(Dense(units=n_hidden-5,activation='relu',kernel_regularizer=regularizers.l2(0.01)))
 	model.add(Dense(units=n_hidden-10,activation='relu',kernel_regularizer=regularizers.l2(0.01)))
 	model.add(Dense(units=n_hidden-15,activation='relu',kernel_regularizer=regularizers.l2(0.01)))
-	#model.add(Dense(units=n_hidden-80,activation='relu',kernel_regularizer=regularizers.l2(0.01)))
-	#model.add(Dense(units=n_hidden-100,activation='relu',kernel_regularizer=regularizers.l2(0.01)))
 	model.add(Dense(units=output_size,activation='softmax',kernel_regularizer=regularizers.l2(0.01)))
-	#model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=learning_rate),metrics=['accuracy'])
 	model.compile(loss='categorical_crossentropy', optimizer=Adam(lr=learning_rate),metrics=['accuracy'])
 	return model
-
 
 
 model_path = 'M.h5'
@@ -44,16 +40,13 @@ classes
 learning_rate = 0.001
 n_hidden = 25
 
-
 experiments = 2
-
 
 # Train,test split
 X_train,X_test,y_train,y_test = model_selection.train_test_split(X,Y_one_hot,test_size=0.15)
 
 print("Train size: ",len(X_train))
 print("Test size: ",len(X_test))
-
 
 
 # Train
